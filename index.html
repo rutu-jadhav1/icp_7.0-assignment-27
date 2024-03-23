@@ -52,6 +52,29 @@
             normal lighting conditions.
         </p>
     </div>
+
    
+<script>
+        function darkmode(){
+            const imgDark =document.getElementById("dark");
+            imgDark.classList.add("active");
+
+            const imgLight = document.getElementById("light");
+            imgLight.classList.remove("active");
+
+            const bodyElement = document.getElementById("body");
+            bodyElement.className = "theme-dark";
+        }
+        function lightmode(){
+            const imgDark =document.getElementById("dark");
+            imgDark.classList.remove("active");
+
+            const imgLight = document.getElementById("light");
+            imgLight.classList.add("active");
+
+            const bodyElement = document.getElementById("body");
+            bodyElement.className = "theme-light";
+        }
+    </script>
 </body>
 </html>
